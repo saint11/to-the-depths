@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="32" tileheight="32" nextobjectid="21">
+ <tileset firstgid="1" source="tiles.tsx"/>
+ <tileset firstgid="65" source="grid.tsx"/>
+ <layer name="Graphics" width="20" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,
+0,0,17,0,0,18,19,19,19,19,19,19,19,19,19,19,19,19,20,0,
+0,0,17,0,0,0,0,0,0,0,0,0,0,0,19,65,65,65,65,65,
+0,0,17,0,0,0,0,0,0,0,0,0,0,0,17,0,0,0,0,0,
+0,0,17,18,19,19,19,20,0,0,0,0,0,0,17,0,0,0,0,0,
+0,0,0,0,0,0,0,17,0,0,0,0,0,0,17,0,0,0,0,0,
+0,0,0,0,0,0,0,17,0,0,0,0,0,0,17,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Grid" width="20" height="10" opacity="0.25">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,0,
+0,0,66,0,0,66,66,66,66,66,66,66,66,66,66,66,66,66,66,0,
+0,0,66,0,0,0,0,0,0,0,0,0,0,0,66,0,0,0,0,0,
+0,0,66,0,0,0,0,0,0,0,0,0,0,0,66,0,0,0,0,0,
+0,0,66,66,66,66,66,66,0,0,0,0,0,0,66,0,0,0,0,0,
+0,0,0,0,0,0,0,66,0,0,0,0,0,0,66,0,0,0,0,0,
+0,0,0,0,0,0,0,66,0,0,0,0,0,0,66,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="19" name="Cultist" type="monster" x="128" y="128" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="100"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="20" name="Cultist" type="monster" x="512" y="32" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="100"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

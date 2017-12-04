@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="32" tileheight="32" nextobjectid="28">
+ <tileset firstgid="1" source="tiles.tsx"/>
+ <tileset firstgid="65" source="grid.tsx"/>
+ <layer name="Graphics" width="20" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,0,0,0,0,
+0,0,0,0,0,0,0,17,0,0,0,0,0,21,0,0,0,0,0,0,
+0,0,0,0,0,0,17,0,0,0,0,0,0,13,0,0,0,0,0,0,
+0,0,0,0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Grid" width="20" height="10" opacity="0.25">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,0,0,0,0,0,
+0,0,0,0,0,0,0,66,0,0,0,0,0,66,0,0,0,0,0,0,
+0,0,0,0,0,0,66,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,66,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="12" name="box" type="prop" x="128" y="96" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="70"/>
+   </properties>
+  </object>
+  <object id="14" name="box" type="prop" x="160" y="96" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="70"/>
+   </properties>
+  </object>
+  <object id="15" name="box" type="prop" x="128" y="64" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="70"/>
+   </properties>
+  </object>
+  <object id="16" name="box" type="prop" x="160" y="64" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="70"/>
+   </properties>
+  </object>
+  <object id="17" name="box" type="prop" x="192" y="64" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="70"/>
+   </properties>
+  </object>
+  <object id="18" name="box" type="prop" x="192" y="96" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="70"/>
+   </properties>
+  </object>
+  <object id="19" name="box" type="prop" x="96" y="96" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="70"/>
+   </properties>
+  </object>
+  <object id="20" name="box" type="prop" x="64" y="96" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="70"/>
+   </properties>
+  </object>
+  <object id="21" name="box" type="prop" x="32" y="96" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="70"/>
+   </properties>
+  </object>
+  <object id="25" name="DeepOne" type="monster" x="480" y="64" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="100"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="27" name="EyeOrb" type="monster" x="96" y="256" width="32" height="32">
+   <properties>
+    <property name="chance" type="float" value="100"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

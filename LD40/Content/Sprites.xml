@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Sprites>
+<!--Units-->
+  <Sprite name="player">
+    <Origin x="24" y="48"/>
+    <Animations>
+      <Anim name="idle" textures="Player/Idle" delay="2000" frames="0-4"/>
+      <Anim name="walk" textures="Player/Walk" delay="1000" frames="0-7"/>
+      <Anim name="hurt" textures="Player/Hurt" delay="1500" frames="0-3"/>
+      <Anim name="death" textures="Player/Death" delay="1000" repeat="0" frames="0-7"/>
+      <Anim name="attack" textures="Player/Attack" delay="1000" repeat="0" frames="0-4"/>
+    </Animations>
+  </Sprite>
+
+  <Sprite name="deepOne">
+    <Origin x="32" y="64"/>
+    <Animations>
+      <Anim name="idle" textures="Enemies/DeepOne" delay="2000" frames="0-5"/>
+      <Anim name="dead" textures="Enemies/DeepOne" delay="1400" repeat="0" frames="6-10"/>
+    </Animations>
+  </Sprite>
+
+  <Sprite name="eyeOrb">
+    <Origin x="24" y="48"/>
+    <Animations>
+      <Anim name="idle" textures="Enemies/EyeOrb" delay="1700" frames="0,1,2,3,4,0,1,2,3,4,0,1,2,3,4,5,6,7,8,9"/>
+      <Anim name="dead" textures="Enemies/EyeOrb" delay="1000" repeat="0" frames="10-16"/>
+    </Animations>
+</Sprite>
+
+  <Sprite name="cultist">
+    <Origin x="32" y="64"/>
+    <Animations>
+      <Anim name="idle" textures="Enemies/Cultist" delay="1700" frames="0"/>
+      <Anim name="spot" textures="Enemies/Cultist" delay="1400" repeat="0" frames="0-4"/>
+      <Anim name="run" textures="Enemies/Cultist" delay="1400" frames="5-8"/>
+      <Anim name="attack" textures="Enemies/Cultist" delay="1700" frames="9-12"/>
+      <Anim name="dead" textures="Enemies/Cultist" delay="1100" repeat="0" frames="13-24"/>
+      <Anim name="hurt" textures="Enemies/Cultist" delay="1100" repeat="0" frames="25,26,0"/>
+    </Animations>
+  </Sprite>
+
+  <Sprite name="shoggoth">
+    <Origin x="32" y="64"/>
+    <Animations>
+      <Anim name="idle" textures="Enemies/shoggoth" delay="1700" frames="0"/>
+      <Anim name="dead" textures="Enemies/shoggoth" delay="1400" repeat="0" frames="1-7"/>
+    </Animations>
+  </Sprite>
+
+  <Sprite name="yog">
+    <Origin x="32" y="64"/>
+    <Animations>
+      <Anim name="idle" textures="Enemies/yog" delay="1700" frames="0-9"/>
+      <Anim name="dead" textures="Enemies/yog" delay="1500" repeat="0" frames="10-14"/>
+    </Animations>
+  </Sprite>
+
+  <Sprite name="teleporter">
+    <Origin x="0" y="0"/>
+    <Animations>
+      <Anim name="on" textures="Props/teleporter" delay="1200" frames="0-5"/>
+      <Anim name="off" textures="Props/teleporter" delay="1700" frames="6"/>
+    </Animations>
+  </Sprite>
+</Sprites>

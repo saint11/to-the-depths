@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9643DF0-6ADA-41AF-915A-6A34762D1957}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LD40</RootNamespace>
+    <AssemblyName>LD40</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attacks\Damage.cs" />
+    <Compile Include="Attacks\Projectile.cs" />
+    <Compile Include="Attacks\Slash.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Objects\CameraTarget.cs" />
+    <Compile Include="Objects\Enemies\Corpse.cs" />
+    <Compile Include="Objects\Enemies\Cultist.cs" />
+    <Compile Include="Objects\Enemies\DeepOne.cs" />
+    <Compile Include="Objects\Enemies\Enemy.cs" />
+    <Compile Include="Objects\Enemies\EyeOrb.cs" />
+    <Compile Include="Objects\Enemies\Yog.cs" />
+    <Compile Include="Objects\Enemies\Shoggoth.cs" />
+    <Compile Include="Objects\FX\SimpleAnimation.cs" />
+    <Compile Include="Objects\MacGuffin.cs" />
+    <Compile Include="Objects\Player.cs" />
+    <Compile Include="Objects\Props\Potion.cs" />
+    <Compile Include="Objects\Props\Prop.cs" />
+    <Compile Include="Objects\Props\Props.cs" />
+    <Compile Include="Objects\Props\Teleporter.cs" />
+    <Compile Include="Objects\Rooms\Door.cs" />
+    <Compile Include="Objects\Rooms\ForestEntrance.cs" />
+    <Compile Include="Objects\Rooms\Room.cs" />
+    <Compile Include="Objects\Rooms\BattleDoor.cs" />
+    <Compile Include="Objects\Rooms\SlowDoor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Ui.cs" />
+    <Compile Include="Util\FadeOut.cs" />
+    <Compile Include="Util\Sfx.cs" />
+    <Compile Include="Util\Sprite.cs" />
+    <Compile Include="Util\SpriteData.cs" />
+    <Compile Include="Util\Stats.cs" />
+    <Compile Include="Util\YSort.cs" />
+    <Compile Include="World\DungeonMaker.cs" />
+    <Compile Include="World\GameOverScreen.cs" />
+    <Compile Include="World\GameScene.cs" />
+    <Compile Include="World\WinScreen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\otter\Otter\Otter.csproj">
+      <Project>{236485c2-a7ba-4dcd-808a-b3a634764402}</Project>
+      <Name>Otter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
