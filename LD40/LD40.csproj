@@ -84,11 +84,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\otter\Otter\Otter.csproj">
+    <ProjectReference Include="..\Otter\Otter.csproj">
       <Project>{236485c2-a7ba-4dcd-808a-b3a634764402}</Project>
       <Name>Otter</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
